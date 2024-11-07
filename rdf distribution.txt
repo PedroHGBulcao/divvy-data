@@ -1,0 +1,39 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dcite: <http://purl.org/spar/datacite/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix language: <http://id.loc.gov/vocabulary/iso639-1/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sio: <http://semanticscience.org/resource/>.
+@prefix wd: <https://www.wikidata.org/wiki/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dis: <http://localhost:8080/distribution/>.
+@prefix n0: <http://localhost:8080/distribution/8c2fbb52-4ffa-423f-a6d7-64a2ec6e18d2#>.
+@prefix pro: <http://localhost:8080/profile/>.
+@prefix d: <http://localhost:8080/dataset/>.
+@prefix met: <http://localhost:8080/distribution/8c2fbb52-4ffa-423f-a6d7-64a2ec6e18d2/metrics/>.
+@prefix Ped: <https://github.com/PedroHGBulcao/>.
+@prefix fdp: <https://w3id.org/fdp/fdp-o#>.
+
+dis:8c2fbb52-4ffa-423f-a6d7-64a2ec6e18d2
+    a dcat:Distribution, dcat:Resource;
+    dct:accessRights n0:accessRights;
+    dct:description
+        "RDF version of bike-sharing trips record from Divvy Bikes, collected in Chicago in December, 2019";
+    dct:isPartOf d:fc11cb28-1d8f-4e8a-967e-32f97682302f;
+    dct:language language:en;
+    dct:license <http://purl.org/NET/rdflicense/cc-zero1.0>;
+    dct:publisher
+            [
+                a foaf:Agent;
+                foaf:name
+                    "Ana L\u00edvia dos Santos Mazziotti e Pedro Henrique Gallio Bulc\u00e3o"
+            ];
+    dct:title "RDF Divvy Trips Dec 2019";
+    dcat:accessURL Ped:divvy-data;
+    dcat:byteSize "88 MB";
+    dcat:downloadURL
+    <https://github.com/PedroHGBulcao/divvy-data/archive/refs/heads/main.zip>;
+    dcat:format "rdf";
+    dcat:mediaType "text/rdf";
+    dcat:version "1.0".

@@ -1,0 +1,29 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix language: <http://id.loc.gov/vocabulary/iso639-1/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix loc: <http://localhost:8080/>.
+@prefix c: <http://localhost:8080/catalog/>.
+@prefix d: <https://data.cityofchicago.org/Transportation/Divvy-Trips/fg6s-gzvg/data#>.
+@prefix fg6: <https://data.cityofchicago.org/Transportation/Divvy-Trips/fg6s-gzvg/>.
+@prefix d0: <http://publications.europa.eu/resource/authority/data-theme/>.
+
+loc:new
+    a dcat:Dataset, dcat:Resource;
+    dct:description
+        "Bike-sharing trips record from Divvy Bikes, collected in Chicago in December, 2019";
+    dct:isPartOf c:eca91126-9f5b-4243-9edb-5caac3a853fa;
+    dct:issued
+        "Thu Jun 02 2016 00:00:00 GMT+0200 (Hor\u00e1rio de Ver\u00e3o da Europa Central)"^^xsd:dateTime;
+    dct:language language:en;
+    dct:license <http://purl.org/NET/rdflicense/cc-zero1.0>;
+    dct:modified
+        "Wed Jan 17 2024 00:00:00 GMT+0100 (Hor\u00e1rio Padr\u00e3o da Europa Central)"^^xsd:dateTime;
+    dct:publisher [ a foaf:Agent; foaf:name "City of Chicago" ];
+    dct:title "Divvy Trips Dec 2019";
+    dcat:contactPoint d:contact;
+    dcat:keyword "Bike-Sharing", "Transportation", "Urban Mobility";
+    dcat:landingPage fg6:about_data;
+    dcat:theme d0:TRAN;
+    dcat:version "1.5".

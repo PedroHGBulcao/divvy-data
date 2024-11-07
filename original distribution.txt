@@ -1,0 +1,24 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix language: <http://id.loc.gov/vocabulary/iso639-1/>.
+@prefix loc: <http://localhost:8080/>.
+@prefix d: <http://localhost:8080/dataset/>.
+@prefix fg6: <https://data.cityofchicago.org/Transportation/Divvy-Trips/fg6s-gzvg/>.
+
+loc:new
+    a dcat:Distribution, dcat:Resource;
+    dct:description
+        "Original Bike-sharing trips record from Divvy Bikes, collected in Chicago in December, 2019";
+    dct:isPartOf d:fc11cb28-1d8f-4e8a-967e-32f97682302f;
+    dct:language language:en;
+    dct:license <http://purl.org/NET/rdflicense/cc-zero1.0>;
+    dct:publisher [ a foaf:Agent; foaf:name "City of Chicago" ];
+    dct:title "Original Divvy Trips December 2019";
+    dcat:accessURL fg6:data;
+    dcat:byteSize "38 MB";
+    dcat:downloadURL
+        <https://data.cityofchicago.org/api/views/fg6s-gzvg/rows.csv?accessType=DOWNLOAD>;
+    dcat:format "csv";
+    dcat:mediaType "text/csv";
+    dcat:version "1.5".
